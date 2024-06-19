@@ -1,20 +1,11 @@
-import React, {
-  useState,
-  useEffect,
-  useReducer,
-  createContext,
-  useCallback,
-  useRef,
-} from "react";
+import React, { useEffect, useRef } from "react";
 
 import * as Notifications from "expo-notifications";
 import { Platform, ToastAndroid } from "react-native";
 import * as Device from "expo-device";
 import Toast from "react-native-toast-message";
 import Constants from "expo-constants";
-import AssingStorage from "@react-native-async-storage/async-storage";
 
-import { useDispatch } from "react-redux";
 import { NotificationData } from "./interface";
 
 Notifications.setNotificationHandler({
