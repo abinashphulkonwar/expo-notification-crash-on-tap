@@ -1,0 +1,44 @@
+{
+  "cli": {
+    "version": ">= 9.0.8"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "channel": "development"
+    },
+    "preview": {
+      "distribution": "internal",
+      "channel": "preview"
+    },
+    "previewdev": {
+      "android": {
+        "buildType": "apk"
+      },
+      "channel": "previewdev"
+    },
+    "preview2": {
+      "android": {
+        "gradleCommand": ":app:assembleRelease"
+      },
+      "channel": "preview2"
+    },
+    "preview3": {
+      "developmentClient": true,
+      "channel": "preview3"
+    },
+    "production": {
+      "node": "v20.9.0",
+      "yarn": "1.22.21",
+      "channel": "production"
+    }
+  },
+  "submit": {
+    "production": {
+      "android": {
+        "serviceAccountKeyPath": "./pc-api-8323321064021648500-725-26bdb07919c9.json"
+      }
+    }
+  }
+}
